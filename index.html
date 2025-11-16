@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I'm Sorry, Aditi ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #333;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .container {
+      padding: 50px 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+    p {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      color: #fff;
+      margin-top: 20px;
+    }
+
+    /* Pink Glow Hearts */
+    .heart {
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      background: #ff77c8;
+      transform: rotate(45deg);
+      animation: floatUp 6s linear infinite;
+      filter: drop-shadow(0 0 10px #ffb3e6) drop-shadow(0 0 20px #ff77c8);
+    }
+    .heart:before,
+    .heart:after {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      background: #ff77c8;
+      border-radius: 50%;
+      filter: drop-shadow(0 0 10px #ffb3e6);
+    }
+    .heart:before { top: -10px; left: 0; }
+    .heart:after { left: -10px; top: 0; }
+
+    @keyframes floatUp {
+      0% { opacity: 0; transform: translateY(20px) scale(0.5) rotate(45deg); }
+      50% { opacity: 1; }
+      100% { opacity: 0; transform: translateY(-500px) scale(1.2) rotate(45deg); }
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 30px;
+      background: #fff;
+      color: #ff6b81;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+
+<body>
+
+  <audio autoplay loop>
+    <source src="thankyou.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Floating Hearts -->
+  <div class="heart" style="left:10%; animation-delay:0s;"></div>
+  <div class="heart" style="left:30%; animation-delay:1s;"></div>
+  <div class="heart" style="left:50%; animation-delay:2s;"></div>
+  <div class="heart" style="left:70%; animation-delay:3s;"></div>
+  <div class="heart" style="left:90%; animation-delay:4s;"></div>
+
+  <div class="container">
+    <div class="heart" style="position:static; animation:none; font-size:40px;">💗</div>
+
+    <h1>I'm Sorry, Aditi</h1>
+
+    <p>
+      I know things haven't been perfect lately, and kuch misunderstandings ho gaye...
+      But I want you to know one thing — <strong>you matter to me a lot</strong>.
+    </p>
+
+    <p>
+      Jo bhi hua... I'm really sorry for it. I never want to be the reason you feel hurt.
+      You're special, you're precious, and you're the one I never want to lose.
+    </p>
+
+    <p>Please ek baar smile kar do… for me? ❤️</p>
+
+    <a class="button">Forgive Me?</a>
+  </div>
+
+</body>
+</html>
